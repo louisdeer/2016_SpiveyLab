@@ -3,6 +3,18 @@
 % Yang Lu
 
 
+% standard start
+clear all;
+clc;
+sca;
+Screen('Preference', 'SkipSyncTests', 1); 
+
+SONA = inputdlg('What is the SONA ID?');
+filename = char(strcat(SONA,'_PreTest.txt'));
+CSVfile = fopen(filename, 'w');
+
+%wrtie something
+%fprintf(CSVfile, '%s,%s,%s,%s,%s,%s,%s\n','Cue','Arrow','Position','Resp','Comp','Correct','RT');
 
 
 % PseudoCode : 
@@ -36,5 +48,6 @@
         
 %-----------------------
 % function list:
-% F (Whole Screen covered a  .jpg)
-% F ()
+% F (Whole Screen covered a  .jpg, and pause)
+% F (T/F)
+% F (4 pictures)
